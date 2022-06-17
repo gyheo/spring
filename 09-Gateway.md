@@ -1,6 +1,7 @@
 - [Spring Cloud Gateway](#spring-cloud-gateway)
-	- [설정 방법](#설정-방법)
-	- [References](#references)
+  - [용어 정리](#용어-정리)
+  - [설정 방법](#설정-방법)
+  - [References](#references)
 
 # Spring Cloud Gateway
 
@@ -19,6 +20,14 @@
 - Request Rate Limiting
 
 - Path Rewriting
+
+## 용어 정리
+
+- Route : Gateway 기본 단위
+
+- Predicate : Java8 Function Predicate
+
+- Filter : Spring Framework `GatewayFilter`
 
 ## 설정 방법
 
@@ -50,6 +59,8 @@ public RouteLocator routes(RouteLocatorBuilder builder) {
 }
 ```
 
+
+
 ## References
 
-- https://spring.io/projects/spring-cloud-gateway
+- [Spring-Cloud-Gateway](https://cloud.spring.io/spring-cloud-gateway/reference/html/)
